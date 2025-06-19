@@ -1,0 +1,160 @@
+body {
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  color: #000; /* optional: default text color */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Navigation */
+header {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header .logo img {
+  height: 100;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  background-color: #d7d7d7;
+  border-radius: 4px;
+}
+
+/* Header Image AFTER header */
+.header-image {
+  width: 100%;
+  height: 300px;
+  background: url('success.jpeg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+  background: #cecdcd;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Quotes */
+.quote {
+  font-style: italic;
+  margin: 15px 0;
+  color: #000;
+}
+
+/* Founder Flexbox */
+.founder-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.founder-photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founder-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-photo img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: #030303;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00bcd4;
+}

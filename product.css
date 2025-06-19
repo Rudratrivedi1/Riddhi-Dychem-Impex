@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, 'Segoe UI'; 
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1;
+}
+
+/* Header Navigation */
+header {
+  font-family: system-ui, 'Segoe UI';
+  background-color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header .logo img {
+  height: 100px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  background-color: #d7d7d7;
+  border-radius: 4px;
+}
+
+
+/* Main content */
+.main-content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  width: 1500px;
+  height: 600px;
+  margin-bottom: 40px;
+}
+
+.pdf-viewer iframe {
+  width: 1500px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Call to Action Box */
+.action-box {
+  margin-top: 20px;
+}
+
+.action-box p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #023e8a;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 22px;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+
+  .main-nav a {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .social-links a {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+}

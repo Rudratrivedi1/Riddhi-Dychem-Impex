@@ -1,0 +1,371 @@
+/* Reset & Base Styles */
+body {
+    background-image: url('background.jpg'); /* put your image path */
+    background-size: cover;           /* cover the whole screen */
+    background-position: center;      /* center the image */
+    background-repeat: no-repeat;     /* prevent tiling */
+    background-attachment: fixed;     /* fixed while scrolling */
+    font-family: system-ui, 'Segoe UI';   /* your font choice */
+    margin: 0;
+    padding: 0;
+    color: #333;                      /* text color (adjust if needed) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #080000;
+    background-color: #faf5f5;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    color: #090909;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;     /* Makes all text in the header bold */
+    font-size: 1.2rem;     /* Increases base font size in the header */
+}
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logo p {
+    font-size: 15px;        /* smaller font size */
+    margin-top: 4px;        /* space between logo and text */
+    color: #111111;            /* optional: lighter text color */
+    font-weight: 200S;       /* optional: make text thinner */
+    text-align: center;     /* optional: center align under image */
+}
+
+
+header nav a:hover,
+header nav a.active {
+    background-color: #fffcfc;
+    border-radius: 4px;
+}
+.logo img {
+    height: 100px; /* Adjust height to fit your design */
+    width: auto;
+    display: block;
+}
+
+/* Hero Section */
+
+.hero {
+    background: url('images/banner.jpg') center center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;  /* Bigger text size */
+    font-weight: bold;
+    text-transform: uppercase;  /* Make it all uppercase */
+    margin-top: 10px;
+}
+
+.hero-box {
+    background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+    padding: 40px 30px;
+    max-width: 500px; /* fixed typo: "450Spx" to "450px" */
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* optional darker shadow */
+    color: #030303;
+    text-align: center;
+}
+
+
+.categories {
+
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+
+.categories h2 { 
+  text-align: center;
+    margin: 0 auto;
+     border-radius: 12px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Optional: subtle shadow */
+    max-width: 1250px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #faf8f8;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Category Card */
+.category-item {
+  background-color: #cccaca;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* Image */
+.category-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: fixed;
+  border-radius: 4px;
+}
+
+/* Title */
+.category-item h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #000;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Hover Effect */
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fffcfc;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+/* Enhance Category Box Appearance */
+.category-item {
+    background-color:#fffcfc;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Style the Learn More as a Button */
+.about .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111111;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about .btn:hover {
+    background-color: #005f73;
+    transform: translateY(-2px);
+}
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0c0c0c; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #005f73;
+    transform: translateY(-2px);
+}
+
+
+/* Call to Action */
+.cta {
+    padding: 60px 20px;
+    background-color: #fffcfc;
+    color: #080808;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.site-footer {
+  background-color: #030303;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00bcd4; /* You can change to brand colors if needed */
+}
+
+/* Existing code remains same... */
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover img {
+    transform: scale(1.1);
+}
+
+/* Make text and layout more responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item img {
+        height: 150px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+}
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 99;
+    font-size: 22px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #005f73;
+    transform: scale(1.1);
+}
